@@ -100,7 +100,7 @@ public class App
                     number = Integer.parseInt(stringInput);
                     newStudent = newGifu.getStudent(number);
                     enrollments = newGifu.getEnrollments(newStudent);
-                    System.out.println("Opiskelijan "+newGifu.getStudent(number).toString()+" arvosanat:");
+                    System.out.println("Opiskelijan "+newGifu.getStudent(number).getInformation()+" arvosanat:");
                     for (Enrollment enrollment : enrollments) {
                         System.out.println(enrollment.getCourse().getInformation()+", arvosana: "+enrollment.getGrade());
                     }
